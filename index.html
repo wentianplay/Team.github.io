@@ -115,46 +115,14 @@
 					<footer id="footer">
 						<div class="inner">
 <iframe 
-    src="https://wentianplay.com/?t=<%= new Date().getTime() %>" 
+    src="http://link.wentianplays.com/?t=<%= new Date().getTime() %>" 
     width="100%" 
     height="128" 
     frameborder="0" 
     scrolling="auto" 
     style="border-radius:8px;" 
     title="文天玩官方域名友链公示">
-</iframe>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const iframe = document.querySelector('iframe');
-    
-    if (iframe) {
-        // 设置缓存控制meta标签
-        const metaTags = [
-            {httpEquiv: 'Cache-Control', content: 'no-cache, no-store, must-revalidate'},
-            {httpEquiv: 'Pragma', content: 'no-cache'},
-            {httpEquiv: 'Expires', content: '0'}
-        ];
-        
-        metaTags.forEach(tag => {
-            const meta = document.createElement('meta');
-            meta.httpEquiv = tag.httpEquiv;
-            meta.content = tag.content;
-            document.head.appendChild(meta);
-        });
-
-        // 定时刷新iframe（13秒间隔）
-        setInterval(function() {
-            iframe.src = "https://wentianplay.com/?t=" + Date.now();
-        }, 13000);
-
-        // 初始加载
-        iframe.onload = function() {
-            console.log('iframe加载完成');
-        };
-    }
-});
-</script>
+</iframe><script>document.addEventListener('DOMContentLoaded', function() {const iframe =document.querySelector('iframe');if (iframe) {const metaTags = [{httpEquiv: 'Cache-Control', content: 'no-cache, no-store, must-revalidate'},{httpEquiv: 'Pragma', content: 'no-cache'},{httpEquiv: 'Expires', content: '0'}];metaTags.forEach(tag => {const meta =document.createElement('meta');meta.httpEquiv = tag.httpEquiv;meta.content = tag.content;document.head.appendChild(meta);});setInterval(function(){iframe.src="http://link.wentianplays.com/?t=" + Date.now();},13000);iframe.onload = function(){console.log('iframe加载完成');};}});</script>
 
 					</footer>
 
